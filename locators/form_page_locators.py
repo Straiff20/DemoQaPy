@@ -1,9 +1,8 @@
-from tests.my_common_tools import MyCommonTools as Tools
+from utils.my_tools import MyCommonTools as Tools
 from random import randint
 
 
 class FormPageLocators:
-    """Локаторы страницы с формой"""
 
     TITLE_FORM_PAGE: tuple[str, str] = Tools.set_locator(locator='//div[@class="pattern-backgound playgound-header"]')
     TITLE_OF_FORM: tuple[str, str] = Tools.set_locator(locator='//div[@class="practice-form-wrapper"]/h5')
