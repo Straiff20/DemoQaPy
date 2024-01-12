@@ -6,7 +6,7 @@ from pages.res.urls import Urls
 class FormPage(BasePage):
     url = Urls.forms_page_url
 
-    def check_elements_is_visible(self):
+    def elements_is_visible(self):
         self.wait_element_before_is_visible(Locators.TITLE_FORM_PAGE)
         self.wait_element_before_is_visible(Locators.TITLE_OF_FORM)
 
